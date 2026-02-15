@@ -81,7 +81,7 @@ img{
 }
 .product-img{
     background: grey;
-    box-shadow: 0 0 20px 10px var(--dark);
+    box-shadow: 0 0 20px 10px white;
     width: 200px;
     height: 200px;
     margin: 0 auto;
@@ -167,6 +167,7 @@ img{
 }
 .product:hover .product-img {
     background: rgb(255, 255, 255);
+    
 }
 .product:hover .product-btns{
     opacity: 1;
