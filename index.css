@@ -25,19 +25,29 @@ img{
     width: 88vw;
     margin: 0 auto;
 }
-
+.container .text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 .title, .sm-title{
     padding: 0.6rem 0;
     text-transform: capitalize;
 }
 .title{
+    text-transform: uppercase;
+    color: white;
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 800;
     text-align: center;
     padding: 1.3rem 0;
     opacity: 0.9;
+    cursor: pointer;
 }
 .sm-title{
+    color: blanchedalmond;
     font-weight: 300;
     font-size: 1rem;
     text-transform: uppercase;
@@ -51,7 +61,7 @@ img{
 }
 
 .products{
-    background: var(--light-blue);
+    background: rgb(84, 84, 84);
     padding: 3.2rem 0;
 }
 .products .text-light{
@@ -65,12 +75,12 @@ img{
 }
 
 .product-content{
-    background: var(--dark);
+    background: black;
     padding: 3rem 0.5rem 2rem 0.5rem;
     cursor: pointer;
 }
 .product-img{
-    background: var(--dark);
+    background: grey;
     box-shadow: 0 0 20px 10px var(--dark);
     width: 200px;
     height: 200px;
@@ -88,9 +98,8 @@ img{
 
 .btn-cart, .btn-buy{
     background: transparent;
-    border: 1px solid black;
     padding: 0.8rem 0;
-    width: 125px;
+    width: 115px;
     font-family: inherit;
     text-transform: uppercase;
     cursor: pointer;
@@ -98,26 +107,24 @@ img{
     transition: all 0.5s ease-in;
 }
 .btn-cart{
-    background-color: black;
+    background-color: grey;
     color: white;
     border: 1px solid var(--dark);
-    border-radius: 10px;
 }
 .btn-cart:hover{
-    background-color: var(--sky-blue);
     color: white;
     border-radius: 0px;
+    transform: scale(1.1);
 }
 .btn-buy{
     background-color: white;
     color: black;
-    border: 1px solid var(--dark);
-    border-radius: 10px;
+    border: 1px solid var(--dark); 
 }
 .btn-buy:hover{
-    background-color: var(--sky-blue);
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 0px;
+    transform: scale(1.1);
 }
 
 .product-info{
@@ -156,14 +163,14 @@ img{
     transform: scale(1.1);
 }
 .product:hover .product-img {
-    background: var(--sky-blue);
+    background: rgb(255, 255, 255);
 }
 .product:hover .product-btns{
     opacity: 1;
 }
 
 .off-info .sm-title{
-    background: var(--light-blue);
+    background: darkslategrey;
     color: white;
     cursor: pointer;
     display: inline-block;
