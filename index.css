@@ -131,6 +131,9 @@ img{
     background: white;
     padding: 2rem;
 }
+.product-info .sm-title{
+    color: black;
+}
 .product-info-top{
     display: flex;
     justify-content: space-between;
@@ -160,7 +163,7 @@ img{
     transition: transform 0.5s ease-in;
 }
 .product:hover .product-img img{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 .product:hover .product-img {
     background: rgb(255, 255, 255);
